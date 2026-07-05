@@ -1,0 +1,210 @@
+object Main: TMain
+  Left = 0
+  Top = 0
+  Caption = 'FMX ShadowVolume (c)2026 Execute SARL'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Viewport3D1: TViewport3D
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object Dummy1: TDummy
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      OnRender = Dummy1Render
+      object Light1: TLight
+        Color = claWhite
+        LightType = Point
+        SpotCutOff = 180.000000000000000000
+        Position.X = -4.026018142700195000
+        Position.Y = -20.000000000000000000
+        Position.Z = -5.000000000000000000
+        RotationAngle.X = 175.898178100585900000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = '(-0.999359369277954,0,0,-0.0357874110341072)'
+      end
+      object Plane1: TPlane
+        RotationAngle.X = 90.000000000000000000
+        Width = 100.000000000000000000
+        Height = 100.000000000000000000
+        Depth = 0.001000000047497451
+        SubdivisionsHeight = 100
+        SubdivisionsWidth = 100
+        MaterialSource = LightMaterialSource1
+        Quanternion = '(0.70710676908493,0,0,0.70710676908493)'
+      end
+      object Cube1: TCube
+        Position.X = -4.481822967529297000
+        Position.Y = -6.229052066802979000
+        Width = 2.000000000000000000
+        Height = 2.000000000000000000
+        Depth = 2.000000000000000000
+        MaterialSource = LightMaterialSource2
+        object FloatAnimation3: TFloatAnimation
+          Enabled = True
+          Duration = 5.000000000000000000
+          Loop = True
+          PropertyName = 'RotationAngle.X'
+          StartValue = 0.000000000000000000
+          StopValue = 360.000000000000000000
+        end
+        object FloatAnimation4: TFloatAnimation
+          Enabled = True
+          Duration = 10.000000000000000000
+          Loop = True
+          PropertyName = 'RotationAngle.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 360.000000000000000000
+        end
+        object FloatAnimation5: TFloatAnimation
+          AutoReverse = True
+          Enabled = True
+          Duration = 20.000000000000000000
+          Loop = True
+          PropertyName = 'RotationAngle.Z'
+          StartValue = 0.000000000000000000
+          StopValue = 360.000000000000000000
+        end
+      end
+      object Cube2: TCube
+        Position.X = 4.722322940826416000
+        Position.Y = -3.594568014144897000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        MaterialSource = LightMaterialSource2
+        object Cube4: TCube
+          Position.X = 1.000000000000000000
+          Position.Y = 1.355995655059814000
+          Width = 4.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 4.000000000000000000
+          MaterialSource = LightMaterialSource2
+        end
+      end
+      object Light2: TLight
+        Color = claWhite
+        LightType = Point
+        SpotCutOff = 180.000000000000000000
+        Position.X = -3.148178815841675000
+        Position.Y = -20.000000000000000000
+        Position.Z = -1.000000000000000000
+        RotationAngle.X = 175.898178100585900000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = '(-0.999359369277954,0,0,-0.0357874110341072)'
+        object FloatAnimation2: TFloatAnimation
+          AutoReverse = True
+          Enabled = True
+          Duration = 10.000000000000000000
+          Loop = True
+          PropertyName = 'Position.X'
+          StartValue = -5.000000000000000000
+          StopValue = 5.000000000000000000
+        end
+      end
+      object Cube3: TCube
+        Position.X = 0.643105089664459200
+        Position.Y = -2.341488838195801000
+        Width = 5.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 5.000000000000000000
+        MaterialSource = LightMaterialSource2
+      end
+      object Dummy2: TDummy
+        RotationAngle.Y = 60.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = '(0,0.5,0,0.866025388240814)'
+        object Dummy3: TDummy
+          Position.X = 5.000000000000000000
+          RotationAngle.Y = -10.000000000000000000
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+          Quanternion = '(0,0.0871558710932732,0,-0.99619472026825)'
+        end
+        object FloatAnimation1: TFloatAnimation
+          Enabled = True
+          Duration = 15.000000000000000000
+          Loop = True
+          PropertyName = 'RotationAngle.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 360.000000000000000000
+        end
+        object FloatAnimation6: TFloatAnimation
+          Duration = 20.000000000000000000
+          Loop = True
+          PropertyName = 'RotationAngle.Y'
+          StartValue = 0.000000000000000000
+          StopValue = 360.000000000000000000
+        end
+      end
+      object Dummy4: TDummy
+        Position.Y = -4.000000000000000000
+        Position.Z = -5.000000000000000000
+        RotationAngle.X = 30.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = '(0.258819043636322,0,0,0.965925812721252)'
+        object Mesh1: TMesh
+          Scale.X = 0.500000000000000000
+          Scale.Y = 0.500000000000000000
+          Scale.Z = 0.500000000000000000
+          RotationAngle.Y = 45.000000000000000000
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+          MaterialSource = LightMaterialSource3
+          Quanternion = '(0,0.382683455944061,0,0.923879504203796)'
+          object FloatAnimation7: TFloatAnimation
+            Duration = 10.000000000000000000
+            Loop = True
+            PropertyName = 'RotationAngle.Y'
+            StartValue = 0.000000000000000000
+            StopValue = 360.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object LightMaterialSource1: TLightMaterialSource
+    Diffuse = claDarkgreen
+    Ambient = claGreenyellow
+    Emissive = claNull
+    Specular = claChartreuse
+    Shininess = 1
+    Left = 552
+    Top = 24
+  end
+  object LightMaterialSource2: TLightMaterialSource
+    Diffuse = claWhite
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 552
+    Top = 88
+  end
+  object LightMaterialSource3: TLightMaterialSource
+    Diffuse = claSpringgreen
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 568
+    Top = 176
+  end
+end
